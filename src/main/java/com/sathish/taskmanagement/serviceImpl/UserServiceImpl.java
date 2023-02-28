@@ -25,6 +25,7 @@ public class UserServiceImpl implements UserService {
         user.setPassword(userDto.getPassword());
         return user;
     }
+    //converting from entity to user dto
     private UserDto entityTouserDto(User user){
         UserDto userDto = new UserDto();
         userDto.setId(user.getId());
